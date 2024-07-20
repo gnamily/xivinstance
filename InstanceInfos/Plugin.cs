@@ -29,8 +29,10 @@ public sealed class Plugin : IDalamudPlugin
         uint instance = UIState.Instance()->PublicInstance.InstanceId;
         if (instance == 0)
         {
-            this.dtrEntry.Text = string.Empty;
+            this.dtrEntry.Shown = false;
+            return;
         }
+        this.dtrEntry.Shown = true;
         uint iconNumber = (int)SeIconChar.Instance1 + (instance - 1);
         SeIconChar icon = (SeIconChar)(iconNumber);
         this.dtrEntry.Text = $" {icon.ToIconChar()}";
