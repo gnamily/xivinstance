@@ -27,6 +27,10 @@ public sealed class Plugin : IDalamudPlugin
     public unsafe void UpdateInstanceInfos(IFramework framework)
     {
         uint instance = UIState.Instance()->PublicInstance.InstanceId;
+        if (instance == 0)
+        {
+            this.dtrEntry.Text = string.Empty;
+        }
         uint iconNumber = (int)SeIconChar.Instance1 + (instance - 1);
         SeIconChar icon = (SeIconChar)(iconNumber);
         this.dtrEntry.Text = $" {icon.ToIconChar()}";
