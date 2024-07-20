@@ -1,0 +1,26 @@
+[
+    {
+        "Author": "Gnamily",
+        "Name": "Instance Infos",
+        "InternalName": "InstanceInfos",
+        "AssemblyVersion": "0.0.0.1",
+        "Description": "Simple Plugin to show the instance number in the server bar.",
+        "ApplicableVersion": "any",
+        "Tags": [
+            "instance",
+            "zone",
+            "number",
+            "simple"
+        ],
+        "DalamudApiLevel": 10,
+        "LoadRequiredState": 0,
+        "LoadSync": false,
+        "CanUnloadAsync": false,
+        "LoadPriority": 0,
+        "Punchline": "Show instance Number in the server Bar",
+        "AcceptsFeedback": true,
+        "IsHide": "False",
+        "IsTestingExclusive": "False",
+        "DownloadLinkInstall": "https://github.com/gnamily/xivinstance/releases/download/Stable/0_0_1.zip"
+    }
+]
