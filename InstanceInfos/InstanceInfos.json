@@ -1,0 +1,13 @@
+{
+  "Author": "Gnamily",
+  "Name": "Instance Infos",
+  "Punchline": "Show instance Number in the server Bar",
+  "Description": "Simple Plugin to show the instance number in the server bar.",
+  "ApplicableVersion": "any",
+  "Tags": [
+    "instance",
+    "zone",
+    "number",
+    "simple"
+  ]
+}
